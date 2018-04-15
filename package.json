@@ -1,0 +1,61 @@
+{
+  "name": "typescript-storyshots",
+  "version": "1.0.0",
+  "description": "Sample project using StoryShots, Jest and TypeScript",
+  "main": "lib/src/index.js",
+  "typings": "lib/src/index.d.ts",
+  "scripts": {
+    "compile": "tsc",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "Jest",
+    "TypeScript",
+    "Storybook",
+    "StoryShots",
+    "React"
+  ],
+  "author": "Michael M. Tiller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xogeny/typescript-storyshots/issues"
+  },
+  "homepage": "https://github.com/xogeny/typescript-storyshots#readme",
+  "dependencies": {
+    "react": "^16.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-storyshots": "^3.4.1",
+    "@storybook/react": "^3.4.1",
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.10",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-test-renderer": "^16.0.1",
+    "@types/storybook__react": "^3.0.7",
+    "awesome-typescript-loader": "^3.2.1",
+    "jest": "^22.4.3",
+    "react-dom": "^16.3.1",
+    "react-test-renderer": "^16.3.1",
+    "ts-jest": "^22.4.3",
+    "typescript": "^2.8.1"
+  },
+  "jest": {
+    "transform": {
+      "\\.(jsx?|tsx?)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}
