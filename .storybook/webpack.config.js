@@ -11,7 +11,7 @@ module.exports = (baseConfig, env) => {
         test: /\.(ts|tsx)$/,
         loader: require.resolve('awesome-typescript-loader'),
         options: {
-            transpileOnly: false
+            transpileOnly: true
         }
     });
     config.resolve.extensions.push('.ts', '.tsx');

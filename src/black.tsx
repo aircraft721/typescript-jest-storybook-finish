@@ -1,13 +1,12 @@
 import * as React from 'react';
 
-const Wakka = () => {
+const Black = () => {
     return (
         <div>
-            <p>Wakka flokka in da house</p>
+            <p>Woooo BLACK DIAMOND</p>
             <strong>yep yep</strong>
-            <img src="fifa.png"/>
         </div>
     );
 }
 
-export default Wakka;
+export default Black;

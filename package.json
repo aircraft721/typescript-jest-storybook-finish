@@ -6,7 +6,7 @@
   "typings": "lib/src/index.d.ts",
   "scripts": {
     "compile": "tsc",
-    "test": "jest",
+    "test": "jest --no-cache",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -27,15 +27,19 @@
     "react": "^16.3.1"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "^3.4.1",
-    "@storybook/react": "^3.4.1",
+    "@storybook/addon-storyshots": "^3.4.3",
+    "@storybook/react": "^3.4.3",
     "@types/jest": "^22.2.3",
     "@types/react": "^16.3.10",
     "@types/react-dom": "^16.0.5",
     "@types/react-test-renderer": "^16.0.1",
     "@types/storybook__react": "^3.0.7",
     "awesome-typescript-loader": "^3.2.1",
+    "axe-core": "^3.0.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
+    "jest-axe": "^2.1.4",
     "react-dom": "^16.3.1",
     "react-test-renderer": "^16.3.1",
     "ts-jest": "^22.4.3",
@@ -45,11 +49,12 @@
     "transform": {
       "\\.(jsx?|tsx?)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
+    "setupTestFrameworkScriptFile": "<rootDir>/SetupTests.js",
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/lib/"
     ],
-    "testRegex": "(/test/.*|\\.(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "(/test/.*|\\.(radio))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",

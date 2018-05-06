@@ -1,4 +1,3 @@
-
 import * as path from 'path';
 import initStoryshots, { imageSnapshot } from '@storybook/addon-storyshots';
 
