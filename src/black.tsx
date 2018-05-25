@@ -3,8 +3,10 @@ import * as React from 'react';
 const Black = () => {
     return (
         <div>
-            <p>Woooo BLACK DIAMOND</p>
-            <strong>yep yep</strong>
+            <article role='listitem'>blabla</article>
+            <span>Dasdafas </span>
+            <span>Dasdafas </span>
+
         </div>
     );
 }

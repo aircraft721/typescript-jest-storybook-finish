@@ -5,12 +5,12 @@ const pathToStorybookStatic = path.join(__dirname, '../', 'storybook-static');
 
 initStoryshots({
   suite: 'Image snapshots',
-  storyKindRegex: /Wakka$/,
+  storyKindRegex: /Black$/,
   framework: 'react',
   test: imageSnapshot({
     storybookUrl: `file://${pathToStorybookStatic}`,
     getMatchOptions: () => ({
-      failureThreshold: 0.02, // 2% threshold,
+      failureThreshold: 0.001, // 2% threshold,
       failureThresholdType: 'percent',
     }),
   }),

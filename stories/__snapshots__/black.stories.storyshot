@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Black Woo hoo 1`] = `
+<div>
+  <article
+    role="listitem"
+  >
+    blabla
+  </article>
+  <span>
+    Dasdafas 
+  </span>
+  <span>
+    Dasdafas 
+  </span>
+</div>
+`;

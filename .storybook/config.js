@@ -2,8 +2,14 @@
 
 import { configure } from '@storybook/react';
 
+function importAll(req) {
+  req.keys().forEach(filename => req(filename));
+}
+
+const reqFullPath = require.context('../stories', true, /\.stories\.tsx$/);
+
 function loadStories() {
-  require('../stories');
+  reqFullPath.keys().forEach(module => reqFullPath(module));
 }
 
 configure(loadStories, module);
